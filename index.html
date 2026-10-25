@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abdurahman Jemal | Full-Stack Developer</title>
+<meta name="description" content="Full-stack developer (React, Node.js) building booking, payments, and business software.">
+<style>
+:root{--bg:#0f1115;--card:#171a21;--text:#e8eaf0;--muted:#9aa3b2;--accent:#5eead4;--line:#262b36}
+@media (prefers-color-scheme:light){:root{--bg:#fafafa;--card:#fff;--text:#14171c;--muted:#566070;--accent:#0f766e;--line:#e3e6ec}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+.wrap{max-width:860px;margin:0 auto;padding:0 20px}
+header{padding:64px 0 32px}
+.photo{width:132px;height:132px;border-radius:50%;object-fit:cover;object-position:50% 46%;border:3px solid var(--line);margin-bottom:20px;display:block}
+h1{font-size:2.2rem;margin:0 0 6px}
+.role{color:var(--accent);font-weight:600;margin:0 0 16px}
+p{margin:0 0 12px}
+a{color:var(--accent)}
+.links a{margin-right:16px}
+h2{margin:48px 0 16px;font-size:1.3rem;border-bottom:1px solid var(--line);padding-bottom:8px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:20px;margin-bottom:16px}
+.card h3{margin:0 0 4px}
+.tag{display:inline-block;font-size:.78rem;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:1px 10px;margin:4px 6px 0 0}
+.meta{color:var(--muted);font-size:.9rem;margin-bottom:8px}
+ul{margin:8px 0 0;padding-left:20px}
+footer{padding:40px 0 64px;color:var(--muted);font-size:.9rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+  <img class="photo" src="photo.jpg" alt="Portrait of Abdurahman Jemal" width="132" height="132">
+  <h1>Abdurahman Jemal</h1>
+  <p class="role">Full-stack developer · React, Node.js · Addis Ababa, Ethiopia</p>
+  <p>I build web products from database to deployment: booking and payment systems, business software, and internal tools. Co-founder at Fejir Tech, former bootcamp instructor, open to full-time, part-time, and contract work, remote or local.</p>
+  <p class="links">
+    <a href="mailto:jabdurahman5696@gmail.com">Email</a>
+    <a href="tel:+251920861401">+251 920 861 401</a>
+    <a href="https://www.linkedin.com/in/abdurahman-jemal0872/">LinkedIn</a>
+    <a href="https://github.com/abdre-jemal">GitHub</a>
+  </p>
+</header>
+
+<section>
+<h2>Selected work</h2>
+
+<div class="card">
+  <h3>DMV Luxury Fleet</h3>
+  <div class="meta">Freelance · US client · Live in production</div>
+  <p>Online booking and payment platform for a chauffeur service in the DC/Maryland/Virginia area. Customers get a guaranteed flat price per route or duration and pay immediately, with no quote calls and no surge pricing.</p>
+  <ul>
+    <li>Point-to-point and hourly booking, with a live quote per vehicle class.</li>
+    <li>Guest checkout through Stripe. Prices are derived and checked on the server, never trusted from the client.</li>
+    <li>Admin dashboard: booking management, zone and rate grid editor, fleet management.</li>
+  </ul>
+  <span class="tag">React</span><span class="tag">Node.js / Express</span><span class="tag">MySQL</span><span class="tag">Stripe</span><span class="tag">JWT</span>
+  <p style="margin-top:12px"><a href="https://dmvluxuryfleet.com/">Live site</a></p>
+</div>
+
+<div class="card">
+  <h3>Fejir PMS (Yizota): property management platform</h3>
+  <div class="meta">Fejir Tech · Ethiopian market · First client in progress</div>
+  <p>A web back-office for landlords replacing paper records: properties, units, tenants, leases, and payment records.</p>
+  <ul>
+    <li>Multi-tenant: every company gets its own subdomain and isolated database.</li>
+    <li>Owner and employee roles with per-employee privilege toggles.</li>
+    <li>Bilingual Amharic/English interface, phone-based identity, PDF and CSV export.</li>
+  </ul>
+  <span class="tag">React</span><span class="tag">i18next</span><span class="tag">Express</span><span class="tag">Prisma</span><span class="tag">MariaDB</span><span class="tag">Zod</span>
+</div>
+
+<div class="card">
+  <h3>Fejir ERP</h3>
+  <div class="meta">Fejir Tech · In use by three companies</div>
+  <p>Inventory, sales, and invoicing in one system for Ethiopian businesses, built for multi-store operations. English and Amharic interface, Ethiopian calendar dates, birr, and local VAT and withholding rules.</p>
+  <ul>
+    <li>Low-stock alerts, batch-level cost and supplier tracking.</li>
+    <li>Role-based access: each role sees only what its job needs, checked on the server.</li>
+    <li>Used by three companies today.</li>
+  </ul>
+  <p style="margin-top:12px"><a href="https://fejirtech.com/">fejirtech.com</a></p>
+  <span class="tag">React</span><span class="tag">Node.js</span>
+</div>
+
+<div class="card">
+  <h3>Gym management app</h3>
+  <div class="meta">Fejir Tech · Built for Ethiopian gyms</div>
+  <p>Replaces spreadsheets and notebooks for members, plans, membership expiry, and payments, including local methods (telebirr, CBE Birr, cash, bank transfer).</p>
+  <span class="tag">React</span><span class="tag">Express</span><span class="tag">Prisma</span>
+</div>
+
+<div class="card">
+  <h3>Safe Frequency Wellness</h3>
+  <div class="meta">Freelance · US client</div>
+  <p>Rebuilt a wellness clinic's marketing and booking site with a request-and-approve booking flow for in-person scans and online consultations.</p>
+  <span class="tag">React</span><span class="tag">Stripe</span>
+</div>
+
+<div class="card">
+  <h3>Niya Deals</h3>
+  <div class="meta">Fejir Tech · Internal tool</div>
+  <p>Finds discounted products on approved UAE supplier sites with a browser agent, adds a reference Ethiopian price, and calculates landed cost and profit with traceable assumptions.</p>
+  <span class="tag">TypeScript</span><span class="tag">React</span><span class="tag">TanStack Query</span><span class="tag">Prisma</span><span class="tag">Zod</span>
+</div>
+
+<div class="card">
+  <h3>Wulo</h3>
+  <div class="meta">Personal project · Android</div>
+  <p>A personal life-organizer: tasks, plans, projects, screen time, reading, and more, with a Telegram bot for quick capture and reminders. Works offline and syncs when back online.</p>
+  <span class="tag">React Native (Expo)</span><span class="tag">Kotlin</span><span class="tag">Fastify</span><span class="tag">SQLite</span><span class="tag">grammY</span>
+</div>
+</section>
+
+<section>
+<h2>Skills</h2>
+<p><strong>Frontend:</strong> React, TypeScript, JavaScript, React Router, i18n, responsive UI<br>
+<strong>Backend:</strong> Node.js, Express, Fastify, REST, auth (JWT/sessions), Zod validation<br>
+<strong>Data:</strong> MySQL/MariaDB, SQLite, Prisma<br>
+<strong>Integrations:</strong> Stripe, Resend, Telegram bots<br>
+<strong>Mobile:</strong> React Native (Expo), Android native module (Kotlin)</p>
+</section>
+
+<section>
+<h2>Background</h2>
+<p>B.Sc. Computer Software Engineering, Debre Markos University (2022). Full-stack bootcamp at Evangadi. Taught front-end development at Ajeb Tech (2023 to 2024). Meta certificates in React and Version Control.</p>
+</section>
+
+<footer>Get in touch: <a href="mailto:jabdurahman5696@gmail.com">jabdurahman5696@gmail.com</a></footer>
+</div>
+</body>
+</html>
